@@ -1,0 +1,2 @@
+import CandidateProfileSimpleView from './CandidateProfileSimpleView'
+export default CandidateProfileSimpleView

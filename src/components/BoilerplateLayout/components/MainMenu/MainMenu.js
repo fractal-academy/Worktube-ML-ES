@@ -2,16 +2,19 @@ import {
   AppstoreOutlined,
   DatabaseOutlined,
   FormatPainterOutlined,
-  TeamOutlined
+  TeamOutlined,
+  StarOutlined
 } from '@ant-design/icons'
 import { Col, Menu, MenuItem, Row } from '@qonsoll/react-design'
 
 import { LanguageSelect } from 'domains/Translation/components'
 import { useMemo } from 'react'
 import { useTranslations } from 'contexts/Translation'
+import { useHistory } from 'react-router-dom'
 
 const MainMenu = () => {
   const { t } = useTranslations()
+  const history = useHistory()
   const menuItems = useMemo(
     () => [
       {
@@ -33,9 +36,15 @@ const MainMenu = () => {
         value: 'DB_STRUCTURE',
         icon: <DatabaseOutlined />,
         text: t('DB structure')
+      },
+      {
+        value: 'CANDIDATEPROFILES',
+        icon: <StarOutlined />,
+        text: t('Candidate Profiles'),
+        onClick: () => history.push('/candidateProfiles')
       }
     ],
-    [t]
+    [t, history]
   )
   return (
     <>
@@ -46,7 +55,11 @@ const MainMenu = () => {
       </Row>
       <Menu mode="inline">
         {menuItems.map((item, index) => (
-          <MenuItem key={`${item.value}-${index}`} icon={item.icon}>
+          <MenuItem
+            onClick={item.onClick}
+            key={`${item.value}-${index}`}
+            icon={item.icon}
+          >
             {item.text}
           </MenuItem>
         ))}

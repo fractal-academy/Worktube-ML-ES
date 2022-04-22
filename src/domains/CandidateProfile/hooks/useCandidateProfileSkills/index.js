@@ -1,0 +1,2 @@
+import useCandidateProfileSkills from './useCandidateProfileSkills'
+export default useCandidateProfileSkills

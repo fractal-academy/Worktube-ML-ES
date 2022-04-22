@@ -1,0 +1,2 @@
+import CandidateProfileAdvancedView from './CandidateProfileAdvancedView'
+export default CandidateProfileAdvancedView
