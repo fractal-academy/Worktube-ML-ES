@@ -1,0 +1,2 @@
+import CandidateProfileAdvancedForm from './CandidateProfileAdvancedForm'
+export default CandidateProfileAdvancedForm

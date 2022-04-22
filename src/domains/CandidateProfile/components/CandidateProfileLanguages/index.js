@@ -1,0 +1,2 @@
+import CandidateProfileLanguages from './CandidateProfileLanguages'
+export default CandidateProfileLanguages

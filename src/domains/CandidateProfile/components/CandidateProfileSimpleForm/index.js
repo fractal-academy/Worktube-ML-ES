@@ -1,0 +1,2 @@
+import CandidateProfileSimpleForm from './CandidateProfileSimpleForm'
+export default CandidateProfileSimpleForm

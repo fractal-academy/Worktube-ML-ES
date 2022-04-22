@@ -1,16 +1,41 @@
 import { Redirect, Route, Switch } from 'react-router-dom'
-import { UserEdit, UserShow } from './User'
+import {
+  CandidateProfileShow,
+  CandidateProfilesAll,
+  CandidateProfileCreate
+} from './CandidateProfile'
 
 import { BoilerplateLayout } from 'components'
 import Dashboard from './Dashboard/Dashboard'
 import PATHS from '../paths'
 
-const { DASHBOARD, USER_EDIT, USER_SHOW } = PATHS.AUTHENTICATED
+const {
+  DASHBOARD,
+  CANDIDATEPROFILE_SHOW,
+  CANDIDATEPROFILES_ALL,
+  CANDIDATEPROFILE_CREATE
+} = PATHS.AUTHENTICATED
 
 const routes = [
   { key: 'DASHBOARD', path: DASHBOARD, component: Dashboard, exact: true },
-  { key: 'USER_SHOW', path: USER_SHOW, component: UserShow, exact: true },
-  { key: 'USER_EDIT', path: USER_EDIT, component: UserEdit, exact: true }
+  {
+    key: 'CANDIDATEPROFILE_SHOW',
+    path: CANDIDATEPROFILE_SHOW,
+    component: CandidateProfileShow,
+    exact: true
+  },
+  {
+    key: 'CANDIDATEPROFILES_ALL',
+    path: CANDIDATEPROFILES_ALL,
+    component: CandidateProfilesAll,
+    exact: true
+  },
+  {
+    key: 'CANDIDATEPROFILE_CREATE',
+    path: CANDIDATEPROFILE_CREATE,
+    component: CandidateProfileCreate,
+    exact: true
+  }
 ]
 
 const App = () => {

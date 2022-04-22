@@ -1,0 +1,2 @@
+import useCandidateProfileEducations from './useCandidateProfileEducations'
+export default useCandidateProfileEducations

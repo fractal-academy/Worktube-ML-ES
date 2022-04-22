@@ -21,8 +21,9 @@ const PATHS = {
   },
   AUTHENTICATED: {
     DASHBOARD: '/dashboard',
-    USER_SHOW: '/users/:id',
-    USER_EDIT: '/users/:id/edit'
+    CANDIDATEPROFILE_SHOW: '/candidateProfiles/:candidateProfileId',
+    CANDIDATEPROFILES_ALL: '/candidateProfiles',
+    CANDIDATEPROFILE_CREATE: '/candidateProfile/create'
   }
 }
 

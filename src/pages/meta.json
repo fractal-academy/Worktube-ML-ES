@@ -1,0 +1,1 @@
+{"CandidateProfile":{"CANDIDATEPROFILE_SHOW":{"endpoint":"/candidateprofiles/:candidateProfileId","variant":"Show"},"CANDIDATEPROFILES_ALL":{"endpoint":"/candidateprofiles","variant":"All"},"CANDIDATEPROFILE_CREATE":{"endpoint":"/candidateProfile/create","variant":"Create"}}}
